@@ -36,9 +36,11 @@ O semáforo segue o seguinte ciclo:
 5. **Volta ao estado fechado (Vermelho)** e o ciclo se repete.  
 
 ### **Botão de Pedestre**  
-Caso a entrada `pedestrian` seja acionada enquanto o semáforo está **verde**, ele deve **imediatamente** passar para **vermelho**, interrompendo o ciclo normal.  
+Caso a entrada `pedestrian` seja acionada enquanto o semáforo está **verde**, ele deve **imediatamente** passar para **amarelo**, interrompendo o ciclo normal.  
 
-A máquina de estados do semáforo pode ser representada pelo diagrama abaixo:  
+A máquina de estados do semáforo pode ser representada pelo diagrama abaixo:
+
+> Se não conseguir ver o diagrama, baixe a extensão do vscode "Markdown Preview Mermaid Support"
 
 ```mermaid
 stateDiagram-v2
