@@ -10,7 +10,7 @@ cp saida.out test/saida$1.out
 cp saida.vcd test/saida$1.vcd
 rm -rf saida.out saida.vcd
 
-if diff -Z <(grep '===' test/saida$1.out) test/saida$1.ok >/dev/null; then
+if diff -w <(grep '===' test/saida$1.out) test/saida$1.ok >/dev/null; then
     echo "OK"
     exit 0
 else
